@@ -7,42 +7,53 @@
   </head>
   <body>
 
-    <h1>Company Inc.</h1>
-    <h2>For all your incorporated company needs</h2>
+    <h1>Dunder Mifflin Paper Company Inc.</h1>
+    <h2>For all your paper needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
-
+    <form action="post">
 
       <!-- Add a label for 'fullname'-->
-
+      <label for="fullname">Full name</label>
       <!-- Add a text input with the id and name attributes set to 'fullname' -->
       <!-- Include the place holder text "Enter Name" and make this input required -->
-
+      <input type="text" id="fullname" name="fullname" placeholder="Enter Name" required>
 
       <!-- Add a label for 'email'-->
-
+      <label for="email">Email</label>
       <!-- Add a email input with the id and name attributes set to 'email' -->
       <!-- Include the place holder text "Enter Email" and make this input required -->
-
+      <input type="email" id="email" name="email" placeholder="Enter Email" required>
 
       <!-- Add a label for 'phone'-->
-
+      <label for="phone">Phone number</label>
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
       <!-- Include the place holder text "Enter Telephone (optional)" -->
-
+      <input type="tel" id="phone" name="tel" placeholder="Enter Telephone (optional)" required>
 
       <!-- Add a label for 'message'-->
-
+      <label for="message">Any extra messages to be printed on paper order</label>
       <!-- Add a textarea tag with the id and name attributes set to 'message' -->
       <!-- Include the place holder text "Enter Message" -->
-
+      <textarea id="message" name="message" placeholder="Enter Message"></textarea>
 
       <!-- Add a checkbox input with the id set to 'checkbox' -->
+      <h3>Choose type of paper</h3>
 
+      <input type="checkbox" id="checkbox" name="paper 1" value="Bond paper">
+      Bond paper<br>
+      <input type="checkbox" id="checkbox" name="paper 2" value="Gloss paper">
+      Gloss paper<br>
+      <input type="checkbox" id="checkbox" name="paper 3" value="Matt Coated paper">Matt Coated paper<br>
+      <input type="checkbox" id="checkbox" name="paper 4" value="Recycled paper">Recycled paper<br>
+      <input type="checkbox" id="checkbox" name="paper 5" value="Silk coated paper">Silk Coated paper<br>
+      <input type="checkbox" id="checkbox" name="paper 6" value="Uncoated paper">Uncoated paper<br>
+      <input type="checkbox" id="checkbox" name="paper 7" value="Watermarked paper">Watermarked paper<br>
 
 
       <!-- Add an input with the type set to 'submit' -->
-
+      <input type="submit" value="Order Paper">
+      </form>
     
   </body>
 </html>
